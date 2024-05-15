@@ -10,12 +10,11 @@ function App() {
   
   return (
     <>
-      <Loader />
-      <Leaderboard />
+      
       <Canvas
         shadows
         camera={{ position: [0, 30, 0], fov: 30, near: 2 }}
-        // optimization to increase performance on retina/4k devices
+        dpr={[1, 1.5]} // optimization to increase performance on retina/4k devices
       >
         <color attach="background" args={["#242424"]} />
   
